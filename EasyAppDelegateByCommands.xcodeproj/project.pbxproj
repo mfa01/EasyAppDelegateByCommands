@@ -13,6 +13,13 @@
 		18D492012832905000834606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D491FF2832905000834606 /* Main.storyboard */; };
 		18D492032832905300834606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D492022832905300834606 /* Assets.xcassets */; };
 		18D492062832905300834606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D492042832905300834606 /* LaunchScreen.storyboard */; };
+		18D492112832907C00834606 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D492102832907C00834606 /* Command.swift */; };
+		18D49213283290A200834606 /* CommandInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D49212283290A200834606 /* CommandInvoker.swift */; };
+		18D492152832917400834606 /* FirebaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D492142832917400834606 /* FirebaseCommand.swift */; };
+		18D492172832928500834606 /* FlurryCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D492162832928500834606 /* FlurryCommand.swift */; };
+		18D492192832929A00834606 /* OnesignalCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D492182832929A00834606 /* OnesignalCommand.swift */; };
+		18D4921B283296BC00834606 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18D4921A283296BC00834606 /* GoogleService-Info.plist */; };
+		A92C668B211D407CAD3F3248 /* Pods_EasyAppDelegateByCommands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC0BBDC8333D1C4E0D0A12B /* Pods_EasyAppDelegateByCommands.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,15 @@
 		18D492022832905300834606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D492052832905300834606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D492072832905300834606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D492102832907C00834606 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		18D49212283290A200834606 /* CommandInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandInvoker.swift; sourceTree = "<group>"; };
+		18D492142832917400834606 /* FirebaseCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCommand.swift; sourceTree = "<group>"; };
+		18D492162832928500834606 /* FlurryCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlurryCommand.swift; sourceTree = "<group>"; };
+		18D492182832929A00834606 /* OnesignalCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnesignalCommand.swift; sourceTree = "<group>"; };
+		18D4921A283296BC00834606 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5E45CF1675B641573B279500 /* Pods-EasyAppDelegateByCommands.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyAppDelegateByCommands.debug.xcconfig"; path = "Target Support Files/Pods-EasyAppDelegateByCommands/Pods-EasyAppDelegateByCommands.debug.xcconfig"; sourceTree = "<group>"; };
+		B0FC4F0390AFE0D5206C5C83 /* Pods-EasyAppDelegateByCommands.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyAppDelegateByCommands.release.xcconfig"; path = "Target Support Files/Pods-EasyAppDelegateByCommands/Pods-EasyAppDelegateByCommands.release.xcconfig"; sourceTree = "<group>"; };
+		CBC0BBDC8333D1C4E0D0A12B /* Pods_EasyAppDelegateByCommands.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyAppDelegateByCommands.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92C668B211D407CAD3F3248 /* Pods_EasyAppDelegateByCommands.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				18D491F82832905000834606 /* EasyAppDelegateByCommands */,
 				18D491F72832905000834606 /* Products */,
+				8378B6D42F311226E080977D /* Pods */,
+				E0C5E0C0834163377E5F14E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,8 @@
 		18D491F82832905000834606 /* EasyAppDelegateByCommands */ = {
 			isa = PBXGroup;
 			children = (
+				18D4920D2832905900834606 /* Comman */,
+				18D4921A283296BC00834606 /* GoogleService-Info.plist */,
 				18D491F92832905000834606 /* AppDelegate.swift */,
 				18D491FB2832905000834606 /* SceneDelegate.swift */,
 				18D491FD2832905000834606 /* ViewController.swift */,
@@ -67,6 +88,51 @@
 			path = EasyAppDelegateByCommands;
 			sourceTree = "<group>";
 		};
+		18D4920D2832905900834606 /* Comman */ = {
+			isa = PBXGroup;
+			children = (
+				18D4920F2832906900834606 /* Core */,
+				18D4920E2832906200834606 /* Commands */,
+			);
+			path = Comman;
+			sourceTree = "<group>";
+		};
+		18D4920E2832906200834606 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				18D492142832917400834606 /* FirebaseCommand.swift */,
+				18D492162832928500834606 /* FlurryCommand.swift */,
+				18D492182832929A00834606 /* OnesignalCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		18D4920F2832906900834606 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18D492102832907C00834606 /* Command.swift */,
+				18D49212283290A200834606 /* CommandInvoker.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8378B6D42F311226E080977D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E45CF1675B641573B279500 /* Pods-EasyAppDelegateByCommands.debug.xcconfig */,
+				B0FC4F0390AFE0D5206C5C83 /* Pods-EasyAppDelegateByCommands.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E0C5E0C0834163377E5F14E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBC0BBDC8333D1C4E0D0A12B /* Pods_EasyAppDelegateByCommands.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D4920A2832905300834606 /* Build configuration list for PBXNativeTarget "EasyAppDelegateByCommands" */;
 			buildPhases = (
+				DE23CD99D27A190FA6FEB676 /* [CP] Check Pods Manifest.lock */,
 				18D491F22832905000834606 /* Sources */,
 				18D491F32832905000834606 /* Frameworks */,
 				18D491F42832905000834606 /* Resources */,
+				9DC6EB419CE7423249468125 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D492062832905300834606 /* LaunchScreen.storyboard in Resources */,
+				18D4921B283296BC00834606 /* GoogleService-Info.plist in Resources */,
 				18D492032832905300834606 /* Assets.xcassets in Resources */,
 				18D492012832905000834606 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +202,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9DC6EB419CE7423249468125 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyAppDelegateByCommands/Pods-EasyAppDelegateByCommands-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyAppDelegateByCommands/Pods-EasyAppDelegateByCommands-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyAppDelegateByCommands/Pods-EasyAppDelegateByCommands-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE23CD99D27A190FA6FEB676 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyAppDelegateByCommands-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18D491F22832905000834606 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D492192832929A00834606 /* OnesignalCommand.swift in Sources */,
 				18D491FE2832905000834606 /* ViewController.swift in Sources */,
 				18D491FA2832905000834606 /* AppDelegate.swift in Sources */,
+				18D49213283290A200834606 /* CommandInvoker.swift in Sources */,
+				18D492112832907C00834606 /* Command.swift in Sources */,
+				18D492152832917400834606 /* FirebaseCommand.swift in Sources */,
 				18D491FC2832905000834606 /* SceneDelegate.swift in Sources */,
+				18D492172832928500834606 /* FlurryCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +400,7 @@
 		};
 		18D4920B2832905300834606 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E45CF1675B641573B279500 /* Pods-EasyAppDelegateByCommands.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +428,7 @@
 		};
 		18D4920C2832905300834606 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0FC4F0390AFE0D5206C5C83 /* Pods-EasyAppDelegateByCommands.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

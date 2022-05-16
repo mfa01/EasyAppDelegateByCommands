@@ -10,10 +10,16 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    // The implementation of these SDKs is not comple, it just to show how command can help to simplify AppDelegate
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let invoker = CommandInvoker([
+            OnesignalCommand(launchOptions: launchOptions),
+            FlurryCommand(),
+            FirebaseCommand()
+        ])
+        invoker.execute()
         return true
     }
 

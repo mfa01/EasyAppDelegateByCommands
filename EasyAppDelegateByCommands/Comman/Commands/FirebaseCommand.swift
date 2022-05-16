@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import Firebase
+
+class FirebaseCommand: Command {
+    
+    func execute() {
+        FirebaseApp.configure()
+        print("+++++++++++++++Firebase started+++++++++++++++")
+    }
+}
