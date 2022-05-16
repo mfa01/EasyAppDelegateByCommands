@@ -75,7 +75,7 @@
 		18D491F82832905000834606 /* EasyAppDelegateByCommands */ = {
 			isa = PBXGroup;
 			children = (
-				18D4920D2832905900834606 /* Comman */,
+				18D4920D2832905900834606 /* CommandPattern */,
 				18D4921A283296BC00834606 /* GoogleService-Info.plist */,
 				18D491F92832905000834606 /* AppDelegate.swift */,
 				18D491FB2832905000834606 /* SceneDelegate.swift */,
@@ -88,13 +88,13 @@
 			path = EasyAppDelegateByCommands;
 			sourceTree = "<group>";
 		};
-		18D4920D2832905900834606 /* Comman */ = {
+		18D4920D2832905900834606 /* CommandPattern */ = {
 			isa = PBXGroup;
 			children = (
 				18D4920F2832906900834606 /* Core */,
 				18D4920E2832906200834606 /* Commands */,
 			);
-			path = Comman;
+			path = CommandPattern;
 			sourceTree = "<group>";
 		};
 		18D4920E2832906200834606 /* Commands */ = {
